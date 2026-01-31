@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZPRC_TBTMG'
+@MappingRole: true
+define role ZPRC_TBTMG {
+  grant select on ZPRC_TBTMG
+  where INHERITING CONDITIONS FROM ENTITY ZPRR_TBTMG REPLACING { ROOT WITH _BaseEntity };
+}

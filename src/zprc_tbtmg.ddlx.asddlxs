@@ -1,0 +1,142 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'Plant'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'Plant'
+annotate view ZPRC_TBTMG with
+{
+  @EndUserText.label: 'Plant'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'Plant'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'Plant'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  Plant;
+  
+  @EndUserText.label: 'PlantName'
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'PlantName'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 , 
+    label: 'PlantName'
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  PlantName;
+  
+  @EndUserText.label: 'PlantAddr1'
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'PlantAddr1'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'PlantAddr1'
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  PlantAddr1;
+  
+  @EndUserText.label: 'PlantState'
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'PlantState'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'PlantState'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  PlantState;
+  
+  @EndUserText.label: 'CreatedOn'
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'CreatedOn'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'CreatedOn'
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  CreatedOn;
+  
+  @UI.identification: [ {
+    position: 60 
+  } ]
+  @UI.lineItem: [ {
+    position: 60 
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  Locallastchanged;
+  
+  @UI.identification: [ {
+    position: 70 
+  } ]
+  @UI.lineItem: [ {
+    position: 70 
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  Lastchanged;
+  
+  @UI.identification: [ {
+    position: 80 
+  } ]
+  @UI.lineItem: [ {
+    position: 80 
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  Createdby;
+  
+  @UI.identification: [ {
+    position: 90 
+  } ]
+  @UI.lineItem: [ {
+    position: 90 
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  Changedby;
+  
+  @EndUserText.label: '_BaseEntity'
+  @UI.identification: [ {
+    position: 100 , 
+    label: '_BaseEntity'
+  } ]
+  @UI.lineItem: [ {
+    position: 100 , 
+    label: '_BaseEntity'
+  } ]
+  @UI.selectionField: [ {
+    position: 100 
+  } ]
+  _BaseEntity;
+}

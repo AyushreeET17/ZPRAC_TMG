@@ -1,0 +1,49 @@
+managed implementation in class ZPRBP_R_TBTMG unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for ZPRR_TBTMG alias ZprrTbtmg
+persistent table ZTB_TMG
+extensible
+draft table ZPRTBTMG_D
+etag master Locallastchanged
+lock master total etag Lastchanged
+authorization master( global )
+{
+  field ( mandatory : create )
+   Plant;
+
+  field ( readonly )
+   Locallastchanged,
+   Lastchanged,
+   Createdby,
+   Changedby;
+
+  field ( readonly : update )
+   Plant;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ZTB_TMG corresponding extensible
+  {
+    Plant = plant;
+    PlantName = plant_name;
+    PlantAddr1 = plant_addr1;
+    PlantState = plant_state;
+    CreatedOn = created_on;
+    Locallastchanged = locallastchanged;
+    Lastchanged = lastchanged;
+    Createdby = createdby;
+    Changedby = changedby;
+  }
+
+}

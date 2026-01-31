@@ -1,0 +1,11 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "SAP Object Node Type ZPRTBTMG",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "name": "ZPRTBTMG",
+  "sapObjectType": "ZPRTBTMG",
+  "rootNode": true
+}

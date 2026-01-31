@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZPRC_TBTMG'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZPRC_TBTMG'
+  }
+}
+define service ZPRUI_TBTMG_O4 provider contracts odata_v4_ui {
+  expose ZPRC_TBTMG;
+}
